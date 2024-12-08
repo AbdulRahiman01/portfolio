@@ -1,0 +1,169 @@
+.contact{
+    height: 100vh;
+    width: 100%;
+}
+.contact .contact-head{
+    height: 20vh;
+    width: 100%;
+}
+
+.contact .contact-head h2{
+    font-size: 2.6rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.928);
+    text-align: center;
+}
+.contact .contact-head h4{
+    font-size: .8rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.818);
+    text-align: center;
+}
+.contact .contact-con{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact .contact-con .contact-center{
+    height: 100%;
+    width: 20%;
+    margin-top: 8vh;
+}
+.contact .contact-con .contact-center .card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+    border-radius: 18px;
+    border: .3px solid rgba(0, 0, 0, 0.253);
+    margin-top: 2vh;
+    padding: 2vh 0;
+    cursor: pointer;
+}
+.contact .contact-con .contact-center .card-info i{
+    color: rgba(0, 0, 0, 0.842);
+    font-size: 1.4rem;
+}
+.contact .contact-con .contact-center .card-info a i{
+    font-size: 2rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.contact .contact-con .contact-center .card-info h3{
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.contact .contact-con .contact-center .card-info h5{
+    font-size: .8rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.contact .contact-con .form-container{
+    height: 100%;
+    width: 30%;
+}
+.contact .contact-con .form-container form input{
+    width: 100%;
+    height: 8.5vh;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    border: .5px solid gray;
+    padding-left: 2vw;
+    color: rgba(0, 0, 0, 0.603);
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 2vh 0;
+}
+.contact .contact-con .form-container form label{
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+    top: 4vh;
+    right: -2vw;
+    z-index: 1000;
+    background-color: rgba(240, 248, 255, 0.428);padding: 5px;
+    border-radius: 18px;
+}
+.contact .contact-con .form-container form input::placeholder{
+    font-size: .8rem;
+}
+.contact .contact-con .form-container form .input{
+    height: 25vh;
+    padding-bottom: 18vh;
+}
+.contact .contact-con .form-container form button{
+    height: 45px;
+    width: 140px;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.88);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.contact .contact-con .form-container form button:hover{
+    background-color: black;
+}
+
+.contact .footer{
+    height: 10vh;
+    width: 100%;
+    background-color:#ffffff66;
+    text-align: center;
+}
+.contact .footer i{
+    font-size: 1.5rem;
+    padding: 0 2vw;
+}
+.contact .footer  h3{
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+.contact .footer a{
+    color: rgba(0, 0, 0, 0.771);
+}
+.contact .footer a:hover{
+    color: black;
+}
+
+@media screen and (max-width:750px) and (min-width:300px){
+    .contact{
+        margin-left: 2vw;
+    }
+    .contact .contact-con{
+        display: block;
+        width: 100%;
+    }
+    .contact .contact-con .contact-center{
+        width: 80%;
+        margin: auto;
+    }
+    .contact .contact-con .form-container{
+        width: 90%;
+        margin: auto;
+    }
+    .contact .footer{
+        margin-top: 80vh;
+    }
+}

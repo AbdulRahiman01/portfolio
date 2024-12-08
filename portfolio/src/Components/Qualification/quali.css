@@ -1,0 +1,153 @@
+.quali{
+    height: 100vh;
+    width: 100%;
+}
+.quali .quali-head{
+    height: 15vh;
+    width: 100%;
+    padding: 10vh 0;
+}
+.quali .quali-head h2{
+    font-size: 2.6rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.928);
+    text-align: center;
+}
+.quali .quali-head h4{
+    font-size: .8rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.818);
+    text-align: center;
+}
+.quali .quali-con{
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}
+.quali .quali-con .edu-con{
+    height: 50vh;
+    width: 30vw;
+    border-radius: 18px;
+}
+.quali .quali-con .edu-con .edu-head{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quali .quali-con .edu-con .edu-head h3{
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000cf;
+    margin-bottom: 15vh;
+}
+.quali .quali-con .edu-con .edu-head h3 i{
+    font-size: 1.9rem;
+}
+.quali .quali-con .edu-con .edus{
+    height: 50vh;
+    width: 100%;
+}
+.quali .quali-con .edu-con .edus .edu{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.quali .quali-con .edu-con .edus .edu .edu-c{
+    display: flex;
+    flex-direction: column;
+    row-gap: .4vh;
+    height: 100%;
+    width: 24%;
+}
+.quali .quali-con .edu-con .edus .edu .round{
+    height: 100%;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.quali .quali-con .edu-con .edus .edu .round .rounder{
+    height: 10px;
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.908);
+    border-radius: 50%;
+}
+.quali .quali-con .edu-con .edus .edu .round .rounder::after{
+    content: '';
+    height: 100%;
+    width: 1.5px;
+    background-color: rgba(0, 0, 0, 0.438);
+    position: absolute;
+    right:52px;
+
+}
+.quali .quali-con .edu-con .edus .edu .null{
+    height: 100%;
+    width: 24%;
+}
+
+.quali .quali-con .edu-con .edus .edu .edu-c h4{
+    font-size: 1.4rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000af;
+}
+.quali .quali-con .edu-con .edus .edu .edu-c h5{
+    font-size: .8rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #000000cf;
+}
+.quali .quali-con .edu-con .edus .edu .edu-c p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    color: #0000008e;
+}
+
+@media screen and (max-width:1120px){
+    .quali .quali-con .edu-con{
+        width: 70vw;
+    }
+    .quali .quali-con .edu-con .edus{
+        width: 100%;
+
+    }
+    .quali .quali-con .edu-con .edus .edu .round .rounder::after{
+        top: 0;
+        right: 78px;
+    }
+}
+
+@media screen and (max-width:750px) and (min-width:300px){
+    .quali{
+        height: 100vh;
+        width: 100%;
+        margin-top: 55vh;
+        margin-left: 10px;
+    }
+    .quali .quali-con .edu-con .edus{
+        width: 100%;
+    }
+    .quali .quali-con .edu-con{
+        width: 100vw;
+    }
+    .quali .quali-con .edu-con .edus .edu .round .rounder::after{
+        top: 0;
+        right: 41.5px;
+    }
+}

@@ -1,0 +1,278 @@
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.home .social{
+    height: 30%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    font-size: 1.1rem;
+    margin-left: 100px;
+
+}
+.home .social a i{
+    color: rgba(0, 0, 0, 0.887);
+    font-size: 1.4rem;
+}
+
+.home .content{
+    height: 60%;
+    width: 50%;
+    margin-top: 11vh;
+}
+.home .img-con{
+    height: 60%;
+    width: 30%;
+    padding: 8vh 0;
+}
+
+.home .content .heading h3{
+    font-size: 3.5rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-left: 40px;
+   color: rgba(0, 0, 0, 0.904);
+    cursor: pointer;
+    padding: 2vh 0;
+}
+
+.home .content .heading{
+    display: flex;
+    width: 100%;
+}
+.home .content .heading svg {
+    height: 70px;
+    width: 100px;
+    margin-top: 3vh;
+    animation: rotate 6s infinite linear; /* You can adjust the duration (2s) */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(40deg);
+    }
+    60%{
+        transform: rotate(-30deg)
+    }
+    100%{
+        transform:rotate(0deg) ;
+    }
+}
+
+.home .content .sub-heading{
+    display: flex;
+}
+.home .content .sub-heading .line{
+    height: 2px;
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0.863);
+    margin: 3vh .2vh;
+}
+.home .content .sub-heading  h4{
+    font-size: 2rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #0c080a;  
+}
+.home .content .desc p {
+    font-size: 1.1rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 4vh .5vh;
+}
+
+.home .img-con img{
+   height: 290px;
+   width: 220px;
+   border: 5px solid gray;
+   animation: animate 8s ease-in-out infinite 1s;
+   margin-left: 50px;
+}
+
+@keyframes animate {
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+.home .content button{
+    height: 50px;
+    width: 160px;
+    border-radius: 18px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.839);
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px;
+    cursor: pointer;
+    margin: 20px;
+    margin-right: 20px;
+}
+.home .content button:hover{
+    background-color: black;
+}
+
+.home .content .scroll{
+    display: flex;
+    margin-top: 4vh;
+}
+.home .content .scroll h3{
+    font-size: 1.2rem;
+    padding: 0px 25px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #0c080abb;
+    padding: 2vh .6vh;
+}
+.home .content .scroll svg{
+    height: 50px;
+    width: 50px;
+}
+
+
+ @media screen and (max-width:1120px){
+  .home{
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 30vh;
+  }
+  .home .social{
+    height: 60%;
+    width: 8%;
+    margin-top: 10vh;
+    padding-right: 50px;
+  }
+  .home .content{
+    height: 50%;
+    width: 65%;
+    margin: 0;
+  }
+  .home .content .heading h3{
+    font-size: 2.4rem;
+    margin-top: 16px;
+   }
+   .home .content .heading svg {
+    height: 30px;
+    width: 50px;
+}
+.home .content .sub-heading  h4{
+    font-size: 1.3rem;
+    margin-top: 2vh;
+ 
+}
+.home .content .sub-heading .line{
+    height: 2px;
+    width: 70px;
+    background-color: black;
+}
+.home .img-con{
+    height: 60%;
+    width: 30%;
+    display: grid;
+    place-items: center;
+}
+.home .img-con img{
+    height: 200px;
+    width: 130px;
+    margin: 0;
+    padding: 0;
+}
+
+.home .content .scroll{
+    display: none;
+}
+
+.home .content .desc p {
+    font-size: 1rem;
+}
+.home .content button{
+    height: 50px;
+    width: 120px;
+}
+a{
+    text-decoration: none;
+}
+
+}
+
+@media screen and (max-width:750px) and (min-width:300px) {
+    .home{
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+    }
+    .home .img-con{
+        order: 1;
+        height: 45vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .home .img-con img{
+        height: 270px;
+        width: 190px;
+    }
+    .home .social{
+        order: 2;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 5vh;
+        margin-right: 30px;
+    }
+    .home .social i{
+        font-size: 1.4rem;
+    }
+    .home .content{
+        order: 3;
+        width: 100%;
+        padding: 25px;
+        margin-left: 20px;
+    }
+    .home .content .heading svg{
+        height: 50px;
+        width: 80px;
+    }
+    .home .content .heading h3{
+        font-size: 1.6rem;
+        padding: 0;
+        padding-left: 20px;
+    }
+    .home .content .heading h4{
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+    .home .content button{
+        height: 40px;
+        width: 140px;
+        position: relative;
+        bottom: 30px;
+        right: 25px;
+        border-radius: 10px;
+    }
+
+}

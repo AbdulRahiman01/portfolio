@@ -1,0 +1,108 @@
+.skills{
+    height: 80vh;
+    width: 100%;
+}
+.skills .skills-head{
+    height: 15vh;
+    width: 100%;
+}
+.skills .skills-head h2{
+    font-size: 2.6rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.928);
+    text-align: center;
+}
+.skills .skills-head h4{
+    font-size: .8rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.818);
+    text-align: center;
+}
+.skills .skills-con{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2.5vw;
+}
+.skills .skills-con .front-end{
+    border: .4px solid rgba(0, 0, 0, 0.219);
+    width: 30vw;
+    border-radius: 18px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.151);
+    padding: 0 3vh;
+}
+.skills .skills-con .front-end .front-title h3{
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000cf;
+    padding: 2vh 0;
+}
+.skills .skills-con .front-end .skills-list{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.skills .skills-con .front-end .skills-list .skill{
+    padding: 3vh;
+}
+.skills .skills-con .front-end .skills-list .skill .skill-line{
+    display: flex;
+}
+.skills .skills-con .front-end .skills-list .skill .skill-line i{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.64);
+}
+.skills .skills-con .front-end .skills-list .skill .skill-line h4{
+    font-size: 1.2rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.skills .skills-con .front-end .skills-list .skill p{
+    font-size: .8rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 15px;
+    color: rgba(0, 0, 0, 0.664);
+}
+
+@media screen and (max-width:1120px) {
+    .skills .skills-con .front-end{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width:750px) and (min-width:300px) {
+    .skills{
+        height: 100vh;
+        width: 100%;
+        padding-top: 30vh;
+        margin-left: 15px;
+    }
+    .skills .skills-con{
+        display: block;
+    }
+    .skills .skills-con .front-end{
+        width: 90vw;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .skills .skills-con .front-end .skills-list .skill .skill-line h4{
+        font-size: 1rem;
+    }
+    .skills .skills-con .front-end .skills-list .skill p{
+        font-size: .7rem;
+        padding-left:30px;
+    }
+    
+
+}
