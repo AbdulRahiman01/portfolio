@@ -14,8 +14,8 @@ const AboutMe = () => {
 
                 <div className="about-center">
                     <div className="Img-Container">
-                        <img src='https://res-console.cloudinary.com/dfdfu80by/thumbnails/v1/image/upload/v1733602286/bXlwaWNfcWhjMGZp/preview' alt="" />
-
+                        {/* <img src='https://res-console.cloudinary.com/dfdfu80by/thumbnails/v1/image/upload/v1733602286/bXlwaWNfcWhjMGZp/preview' alt="" /> */}
+                            <img src="https://cdn.pixabay.com/photo/2024/12/08/11/53/11-53-20-637_1280.jpg" alt="" />
                         {/* <img src= '../../../src/Images/pic.jpg' alt="" /> */}
                     </div>
 

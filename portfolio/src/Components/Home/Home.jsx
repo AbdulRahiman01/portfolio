@@ -39,7 +39,8 @@ const Home = () => {
         </div>
 
         <div className="img-con">
-                <img src= 'https://res-console.cloudinary.com/dfdfu80by/thumbnails/v1/image/upload/v1733602274/cHJvZmlsZV91eWZ5cGQ=/preview' alt="" />
+                <img src="https://cdn.pixabay.com/photo/2024/12/08/12/07/12-07-33-853_1280.jpg" alt="" />
+                {/* <img src= 'https://res-console.cloudinary.com/dfdfu80by/thumbnails/v1/image/upload/v1733602274/cHJvZmlsZV91eWZ5cGQ=/preview' alt="" /> */}
                 {/* <img src=  '../../../src/Images/pro.jpg' alt="" /> */}
         </div>
 
